@@ -34,6 +34,7 @@ defmodule ElixirClusterDemo.MixProject do
       {:phoenix, "~> 1.7.0-rc.2", override: true},
       {:phoenix_live_view, "~> 0.18.13"},
       {:phoenix_pubsub, "~> 2.0"},
+      {:phoenix_view, "~> 2.0"},
       {:phoenix_html, "~> 3.0"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:gettext, "~> 0.11"},

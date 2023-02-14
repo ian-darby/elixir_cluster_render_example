@@ -2,6 +2,7 @@
   <div class="row text-center justify-content-center">
     <div class="col">
       <h1 class="display-4">Distributed Elixir Cluster with libcluster</h1>
+      <h2>Phoenix version <%= Application.spec(:phoenix)[:vsn] %></h2>
       <p>Learn more at <a href="https://render.com/docs/deploy-elixir-cluster">https://render.com/docs/deploy-elixir-cluster</a>.
     </div>
   </div>
