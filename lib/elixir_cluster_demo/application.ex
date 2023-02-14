@@ -12,6 +12,8 @@ defmodule ElixirClusterDemo.Application do
     children = [
       # start libcluster
       {Cluster.Supervisor, [topologies, [name: ElixirClusterDemo.ClusterSupervisor]]},
+      # Start the PubSub system
+      {Phoenix.PubSub, name: ElixirClusterDemo.PubSub},
       # Start the endpoint when the application starts
       ElixirClusterDemoWeb.Endpoint
       # Starts a worker by calling: ElixirClusterDemo.Worker.start_link(arg)
